@@ -1,0 +1,6 @@
+gender: ['male', 'female']
+race: ['white', 'black', 'asian', 'hispanic', 'American Indian']
+socioeconomic_status: ['low', 'middle', 'high']
+hobbies: ['sports and travel', 'arts', 'technology', 'reading', 'gaming']
+health_status: ['excellent', 'fair', 'poor']
+

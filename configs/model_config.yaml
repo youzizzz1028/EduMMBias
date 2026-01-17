@@ -1,0 +1,74 @@
+# model config
+models:
+  # Claude-3.7
+  gpt-5:
+    reason: "mix"
+    provider: "OpenAI"
+    model_name: "gpt-5-2025-08-07"
+
+  claude-opus:
+    reason: true
+    provider: "Anthropic"
+    model_name: "claude-opus-4-5-20251101"
+
+  # Qwen3-235B-R
+  qwen3-235b-r:
+    reason: true
+    provider: "Alibaba"
+    model_name: "qwen3-235b-a22b-thinking-2507"
+
+  # Deepseek-R1
+  deepseek-r1:
+    reason: true
+    provider: "Deepseek"
+    model_name: "deepseek-r1-250528"
+
+  # GLM-Z1-9B
+  glm-4.5:
+    reason: "mix"
+    provider: "ZhipuAI"
+    model_name: "glm-4.5"
+
+  gemini-flash-r:
+    reason: false
+    provider: "Google"
+    model_name: "gemini-flash-latest-thinking"
+  
+
+  # Non-Reason
+  # GPT-4o
+  gpt-4.1:
+    reason: false
+    provider: "OpenAI"
+    model_name: "gpt-4.1"
+  
+  claude-sonnet:
+    reason: false
+    provider: "Anthropic"
+    model_name: "claude-sonnet-4-5-20250929"
+
+  # Qwen3-235B
+  qwen3-235b:
+    reason: false
+    provider: "Alibaba"
+    model_name: "qwen3-235b-a22b"
+
+  # Deepseek-V3
+  deepseek-v3.2:
+    reason: false
+    provider: "Deepseek"
+    model_name: "deepseek-v3.2"
+
+  gemini-flash:
+    reason: true
+    provider: "Google"
+    model_name: "gemini-flash-latest-nothinking"
+  
+
+default:
+  base_url: "Your API URL"
+  api_key: "Your API Key"
+  log: "llm_call.log"
+  max_retries: 3
+  retry_delay: 1
+  timeout: 180
